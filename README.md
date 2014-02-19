@@ -6,27 +6,41 @@ Clona este repositorio
 
     git clone https://gist.github.com/9083388.git bloqueo
 
-Instala `asciinema` con
+Debes tener instalados los siguientes programas:
 
-    sudo pip install --upgrade asciinema
+-   curl
+-   dig
+-   grep
+-   script
+-   traceroute
 
-Ahora en tu terminal ejecuta
+Empieza a grabar ejecutando el siguiente comando en tu terminal:
 
-    asciinema rec
+    script test.log
 
-Te va a crear una terminal de asciinema donde va a grabar todo. Ahí adentro ejecuta
+`script` abrirá una sesión que será grabada en `test.log`.
+
+Una vez hecho esto, ejecuta:
 
     sh bloqueo/testblockade.sh
 
-Al finalizar simplemente escribe `exit` y saldrá el `asciinema` dándote la opción de subirlo automáticamente. Te va a dar un enlace. Compártelo a `@ghostbar` y `@accesolibreve` para tener registro de los bloqueos. ¡Recuerda decirnos cuál es el ISP que tienes y si has cambiado tus DNS o estás usando los DNS predeterminados!
+Al finalizar simplemente escribe `exit` y se habrá guardado la información en el archivo `test.log`.
+
+Para subirlo, ejecuta:
+
+    sh bloqueo/upload.sh
+
+Aparecerá un enlace en el terminal con el siguiente formato:
+
+    http://codepad.org/URLPersonalizada
 
 Si usas Inter y no has cambiado tus DNS
 
-    @accesolibreve REPORTE: https://asciinema.org/a/7719 / Inter / NO
+    @accesolibreve REPORTE: http://codepad.org/URLPersonalizada / Inter / NO
 
 Si usas CANTV y has cambiado tus DNS a los de Google:
 
-    @accesolibreve REPORTE: https://asciinema.org/a/7719 / CANTV / Google
+    @accesolibreve REPORTE: http://codepad.org/URLPersonalizada / CANTV / Google
 
 ## ¿Qué hace?
 
