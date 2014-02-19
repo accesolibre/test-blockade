@@ -2,19 +2,19 @@
 
 echo "Este script viene de https://gist.github.com/ghostbar/9083388"
 
-echo "Haciendo CURL mediante proxy"
+echo "Haciendo CURL mediante proxy (lo detendremos si no responde en 15 segundos)"
 echo $1
 
 echo "Google"
-curl -x $1 -I "http://google.com"
+curl -x $1 -I --max-time 15 "http://google.com"
 echo "Pastebin"
-curl -x $1 -I "http://pastebin.com"
+curl -x $1 -I --max-time 15 "http://pastebin.com"
 echo "Twitter"
-curl -x $1 -I "https://twitter.com"
+curl -x $1 -I --max-time 15 "https://twitter.com"
 echo "Imágenes de Twitter"
 curl -x $1 -I "https://pbs.twimg.com/media/BgyrOdcIQAEbWIX.jpg"
 echo "NTN24"
-curl -x $1 -I "http://www.ntn24.com"
+curl -x $1 -I --max-time 15 "http://www.ntn24.com"
 
 echo "Dig mediante DNS de CANTV"
 echo "Pastebin"
