@@ -16,7 +16,7 @@ Debes tener instalados los siguientes programas:
 
 Empieza a grabar ejecutando el siguiente comando en tu terminal:
 
-    script test.log
+    script bloqueo/test.log
 
 `script` abrirá una sesión que será grabada en `test.log`.
 
