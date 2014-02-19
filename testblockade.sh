@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Este script viene de https://gist.github.com/ghostbar/9083388"
+
 echo "Haciendo CURL"
 
 echo "Google"
