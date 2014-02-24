@@ -14,6 +14,8 @@ echo "Imágenes de Twitter"
 curl -I --max-time 15 "https://pbs.twimg.com/media/BgyrOdcIQAEbWIX.jpg"
 echo "NTN24"
 curl -I --max-time 15 "http://www.ntn24.com"
+echo "Clarin"
+curl -I --max-time 15 "http://www.clarin.com"
 
 echo "Dig mediante DNS de CANTV"
 echo "Pastebin"
@@ -28,6 +30,9 @@ dig pbs.twimg.com
 echo "www.ntn24.com"
 dig www.ntn24.com
 
+echo "www.clarin.com"
+dig www.clarin.com
+
 echo "Traceroutes"
 echo "traceroute -n -w 1 pastebin.com"
 traceroute -n -w 1 pastebin.com
@@ -40,3 +45,6 @@ traceroute -n -w 1 pbs.twimg.com
 
 echo "traceroute -n -w 1 www.ntn24.com"
 traceroute -n -w 1 www.ntn24.com
+
+echo "traceroute -n -w 1 www.clarin.com"
+traceroute -n -w 1 www.clarin.com
