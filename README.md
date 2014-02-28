@@ -22,7 +22,7 @@ Empieza a grabar ejecutando el siguiente comando en tu terminal:
 
 Una vez hecho esto, ejecuta:
 
-    sh bloqueo/testblockade.sh
+    sh bloqueo/test.sh
 
 Al finalizar simplemente escribe `exit` y se habrá guardado la información en el archivo `test.log`.
 
@@ -53,6 +53,10 @@ Si usas CANTV y has cambiado tus DNS a los de Google:
 También hay un verificador rápido usando un proxy. Esto es sobre todo para gente fuera de Venezuela o que esté usando un VPN y no quiera quitarlo. Este verificador es `test-viaproxy-blockade.sh` y acepta como primer argumento la IP de un proxy y sus puertos como:
 
     sh bloqueo/test-viaproxy-blockade.sh 190.111.111.111:8080
+
+Igualmente puedes verificar el bloqueo individualmente de páginas lanzándolas como primer argumento a `test.sh` de esta forma:
+
+    sh bloqueo/test.sh google.com
 
 ## Licencia
 MIT.
