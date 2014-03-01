@@ -4,7 +4,7 @@
 
 Clona este repositorio
 
-    git clone https://gist.github.com/9083388.git bloqueo
+    git clone https://github.com/accesolibre/test-blockade.git bloqueo
 
 Debes tener instalados los siguientes programas:
 
