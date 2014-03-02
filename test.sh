@@ -1,6 +1,7 @@
 #!/bin/bash
-if [[ $# -eq 0 ]] ; then
+if [ $# -eq 0 ]; then
   a="google.com
+  www.facebook.com
   pastebin.com
   pbs.twimg.com/media/Bgyr0dcIQAEbWIX.jpg
   www.ntn24.com
