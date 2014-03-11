@@ -2,6 +2,7 @@
 if [ $# -eq 0 ]; then
   a="google.com
   www.facebook.com
+  www.tunnelbear.com
   pastebin.com
   pbs.twimg.com/media/Bgyr0dcIQAEbWIX.jpg
   www.ntn24.com
